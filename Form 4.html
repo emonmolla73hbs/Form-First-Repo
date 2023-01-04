@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form 4 </title>
+</head>
+<body>
+   
+     <form>
+            <section> 
+                <h1 align="center"> Fill the Form </h1>
+                <hr>
+            </section>
+            <fieldset>
+                <legend> Basic Information </legend>
+                <section>
+
+                    <section>
+                        <label for="name"> Name : </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" size="50" required autofocus autocomplete="on">
+                    </section>
+                    <br>
+                    <section>
+                        <label for="email"> Email : </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" size="50" required autocomplete="on">
+                    </section>
+                    <br>
+                    <section>
+                        <label for="password"> Password : </label>
+                        <input type="password" id="Password" name="Password" placeholder="Enter your Password" size="47" required>
+                    </section>
+                    <br>
+                    <section>
+                        <label for="dob"> Date of Birth : </label>
+                        <input type="date" id="dob" name="dob" placeholder="Enter your Birth Date" size="15">
+                    </section>
+                    <br>
+                    <section>
+                        <label for="age"> Select your Age : </label>
+                        <input type="number" id="age" name="age" value="18" min="18" max="30" step="1" size="10">
+                    </section>
+                    <br>
+                    <section>
+                        <label for="country"> Select Country : </label>
+                        <input list="country" size="20">
+                        <datalist id="country">
+                            <option value="Bangladesh" selected></option>
+                            <option value="India"></option>
+                            <option value="China"></option>
+                            <option value="Nepal"></option>
+                            <option value="Bhutan"></option>
+                            <option value="Myanmar"></option>
+                            <option value="Sri-Lanka"></option>
+                            <option value="Maldives"></option>
+                            <option value="Malaysia"></option>
+                            <option value="Singapore"></option>
+                            <option value="Indonesia"></option>
+                            <option value="Japan"></option>
+                            <option value="South-Korea"></option>      
+                        </datalist>
+                    </section>
+                    <br>
+                    <section>
+                        <label for="phone"> Enter Phone Number : </label>
+                        <select>
+                            <optgroup label="Asia">
+                                <option value="+880">+880</option>
+                                <option value="+055">+055</option>
+                                <option value="+00966" selected>+00966</option>
+                                <option value="+552">+552</option>
+                                <option value="+211">+211</option>
+                                <option value="+255">+255</option>
+                                <option value="+995">+995</option>
+                                <option value="+996">+996</option>
+                                <option value="+0095">+0095</option>
+                                <option value="+011">+011</option>
+                                <option value="+2115">+2115</option>
+                                <option value="+5522">+5522</option>
+                                <option value="+22">+22</option>
+                            </optgroup> 
+                        </select>
+                        <input type="phone" id="phone" name="phone" placeholder="Enter your Phone Number" size="25">
+                    </section>
+                    <br>
+                    <section>
+                        <label for="Gender"> Gender : </label>
+                        <input type="radio" name="gender" value="male" checked>
+                        Male         
+                        <input type="radio" name="gender" value="female">
+                        Female          
+                        <input type="radio" name="gender" value="others">
+                        Others        
+                    </section>
+                    <br>
+                    <section>
+                        <label for="photo"> Choose Your Photo : </label>
+                        <input type="file" id="photo" name="photo" multiple>
+                    </section>
+                    <br>
+                    <section>
+                        <textarea name="comment" id="" cols="55" rows="10" maxlength="350"> Comment here...</textarea>
+                    </section>
+                    <br>
+                    <section>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </section>    
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend> Address </legend>
+                Divition : 
+                <select name="" id="">
+                    <option value="DHAKA" selected> DHAKA </option>
+                    <option value="CHOTTOGRAM"> CHOTTOGRAM </option>
+                    <option value="SYLHET"> SYLHET </option>
+                    <option value="RANGPUR"> RANGPUR </option>
+                    <option value="BARISHAL"> BARISHAL </option>
+                    <option value="MYMENSING"> MYMENSING </option>
+                    <option value="RAJSHAHI"> RAJSHAHI </option>
+                    <option value="KHULNA"> KHULNA </option>
+                </select>
+                <br>
+                <br>
+                District :
+                <select name="" id="">
+                    <option value="Narsingdi" selected>Narsingdi</option>
+                    <option value="Narayanganj">Narayanganj</option>
+                    <option value="Dhaka">Dhaka</option>
+                    <option value="Manikganj">Manikganj</option>
+                    <option value="Kishoreganj">Kishoreganj</option>
+                    <option value="Gazipur">Gazipur</option>
+                </select>
+                <br>
+                <br>
+                Upazila/Thana :
+                <select name="" id="">
+                    <option value="Monohardi" selected>Monohardi</option>
+                    <option value="Narsingdi Sadar">Narsingdi Sadar</option>
+                    <option value="Raypura">Raypura</option>
+                    <option value="Shibpur">Shibpur</option>
+                    <option value="Belabo">Belabo</option>
+                    <option value="Polash">Polash</option>
+                </select>
+                <br>
+                <br>
+                Post Office : 
+                <input type="text" name="post_office" size="60">
+                &nbsp;&nbsp;
+                Village :
+            <input type="text" name="village" size="60">
+            </fieldset>
+    </form>
+</body>
+</html>

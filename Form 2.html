@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Building a Form </title>
+</head>
+<body>
+    <div>
+        <form action="process.php" method="POST">
+            <div>
+                <h1 style="text-align: center;"> Fill This Form </h1>
+            </div>
+            <hr>
+            <div>
+                <label for="name"> Name :  </label>
+                <input type="text" id="name" name="user name" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email"> Email : </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <br>
+            <div>
+                <label for="password"> Password : </label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <br>
+            <div>
+                <label for="dob"> Date of Birth : </label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone"> Phone : </label>
+                    <select>
+                        <option value="+880"> +880 </option>
+                        <option value="+991"> +991 </option>
+                        <option value="+00966"> +00966 </option>
+                        <option value="+551"> +551 </option>
+                    </select>
+                    <input type="phone" id="phone" name="phone" placeholder="123456789"> 
+            </div>
+            <br>
+            <div>
+                <label for="country"> Country : </label>
+               <input list="country" name="country" placeholder="Select country">
+                 <datalist id="country">
+                    <option value="Bangladesh"></option>
+                    <option value="India"></option>
+                    <option value="Sri-Lanka"></option>
+                    <option value="Nepal"></option>
+                </datalist>           
+            </div>
+            <br>
+            <div>
+                Gender : 
+                <input type="radio" id="male" name="gender">
+                <label for="male"> Male </label>
+                <input type="radio" id="female" name="gender">
+                <label for="female"> Female </label>
+            </div>
+            <br>
+            <div>
+                <label for="age"> Age : </label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </div>
+            <br>
+            <div>
+                <label for="color"> Color : </label>
+                <input type="color" id="color" name="color">
+            </div>
+            <br>
+            <div>
+                <label for="Photo"> Upload Photo : </label>
+                <input type="file" name="photo" required>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="vehicle-1" name="car">
+                <label for="vehicle-1"> I have Car.</label>
+                <input type="checkbox" id="vehicle-2" name="bike">
+                <label for="vehicle-2"> I have Bike.</label>
+            </div>
+            <br>
+            <div>
+                <textarea name="comment" cols="50" rows="10" placeholder="Comment here..."></textarea>
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
